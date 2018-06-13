@@ -10,7 +10,7 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t nodejs-awscodebuild-sample .
-      - docker tag nodejs-sample:latest 458897973412.dkr.ecr.us-east-1.amazonaws.com/nodejs-sample:latest
+      - docker tag nodejs-awscodebuild-sample:latest 458897973412.dkr.ecr.us-east-1.amazonaws.com/nodejs-sample:latest
   post_build:
     commands:
       - echo Build completed on `date`
